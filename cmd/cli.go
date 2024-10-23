@@ -43,7 +43,7 @@ type User struct {
 
 func initMongoDB() error {
 	// Replace <username>, <password>, and <cluster-url> with your MongoDB Atlas credentials
-	uri := "mongodb+srv://anmolrajsoni15:PJcV2XNeHSchmfQk@cluster0.tixvf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+	uri := "mongodb+srv://<username>:<password>@cluster0.tixvf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
